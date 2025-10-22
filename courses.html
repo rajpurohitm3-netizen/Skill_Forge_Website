@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - SkillForge Growth Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-graduation-cap"></i> SkillForge</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link active">Courses</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="instructors.html" class="nav-link">Instructors</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                 <a href="community.html" class="nav-link ">Community</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Courses</h1>
+            <p>Discover courses designed to accelerate your career in technology</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="course-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="web-development">Web Development</button>
+                <button class="filter-btn" data-filter="data-science">Data Science</button>
+                <button class="filter-btn" data-filter="mobile-development">Mobile Development</button>
+                <button class="filter-btn" data-filter="ai-ml">AI & Machine Learning</button>
+                <button class="filter-btn" data-filter="devops">DevOps</button>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search courses..." id="course-search">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="courses-grid" id="courses-grid">
+                <!-- Web Development Courses -->
+                <div class="course-card" data-category="web-development">
+                    <div class="course-image">
+                        <div class="course-badge bestseller">Bestseller</div>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Web Development</div>
+                        <h3>Complete Web Development Bootcamp</h3>
+                        <p>Master HTML, CSS, JavaScript, React, Node.js, and MongoDB. Build 15+ projects and become a full-stack developer.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.8 (5,234)</span>
+                            <span><i class="fas fa-users"></i> 12,340 students</span>
+                            <span><i class="fas fa-clock"></i> 65 hours</span>
+                        </div>
+                        <div class="course-features">
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                            <span><i class="fas fa-infinity"></i> Lifetime Access</span>
+                            <span><i class="fas fa-mobile-alt"></i> Mobile Friendly</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="original-price">₹8,999</span>
+                                <span class="current-price">₹4,999</span>
+                            </div>
+                            <button class="btn btn-primary">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="web-development">
+                    <div class="course-image">
+                        <div class="course-badge new">New</div>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Web Development</div>
+                        <h3>Advanced React & Redux Masterclass</h3>
+                        <p>Deep dive into React hooks, context API, Redux toolkit, and performance optimization techniques.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.9 (1,876)</span>
+                            <span><i class="fas fa-users"></i> 3,420 students</span>
+                            <span><i class="fas fa-clock"></i> 45 hours</span>
+                        </div>
+                        <div class="course-features">
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                            <span><i class="fas fa-infinity"></i> Lifetime Access</span>
+                            <span><i class="fas fa-code"></i> Source Code</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="current-price">₹6,999</span>
+                            </div>
+                            <button class="btn btn-primary">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science Courses -->
+                <div class="course-card" data-category="data-science">
+                    <div class="course-image">
+                        <div class="course-badge popular">Popular</div>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Data Science</div>
+                        <h3>Python for Data Science Complete Course</h3>
+                        <p>Learn Python, pandas, NumPy, matplotlib, seaborn, and machine learning fundamentals with real projects.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.9 (3,456)</span>
+                            <span><i class="fas fa-users"></i> 8,760 students</span>
+                            <span><i class="fas fa-clock"></i> 55 hours</span>
+                        </div>
+                        <div class="course-features">
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                            <span><i class="fas fa-infinity"></i> Lifetime Access</span>
+                            <span><i class="fas fa-database"></i> Datasets Included</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="original-price">₹7,999</span>
+                                <span class="current-price">₹5,999</span>
+                            </div>
+                            <button class="btn btn-primary">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="data-science">
+                    <div class="course-image">
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Data Science</div>
+                        <h3>Machine Learning & Deep Learning Masterclass</h3>
+                        <p>Master advanced ML algorithms, neural networks, TensorFlow, and PyTorch for real-world applications.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.8 (2,134)</span>
+                            <span><i class="fas fa-users"></i> 4,590 students</span>
+                            <span><i class="fas fa-clock"></i> 75 hours</span>
+                        </div>
+                        <div class="course-features">
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                            <span><i class="fas fa-infinity"></i> Lifetime Access</span>
+                            <span><i class="fas fa-brain"></i> AI Projects</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="current-price">₹8,999</span>
+                            </div>
+                            <button class="btn btn-primary">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Development Courses -->
+                <div class="course-card" data-category="mobile-development">
+                    <div class="course-image">
+                        <div class="course-badge trending">Trending</div>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Mobile Development</div>
+                        <h3>React Native - Build Native Mobile Apps</h3>
+                        <p>Create cross-platform mobile applications for iOS and Android using React Native and Expo.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.7 (1,987)</span>
+                            <span><i class="fas fa-users"></i> 6,890 students</span>
+                            <span><i class="fas fa-clock"></i> 40 hours</span>
+                        </div>
+                        <div class="course-features">
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                            <span><i class="fas fa-infinity"></i> Lifetime Access</span>
+                            <span><i class="fas fa-mobile-alt"></i> App Store Ready</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="original-price">₹6,999</span>
+                                <span class="current-price">₹4,499</span>
+                            </div>
+                            <button class="btn btn-primary">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="mobile-development">
+                    <div class="course-image">
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Mobile Development</div>
+                        <h3>Flutter & Dart Complete Guide</h3>
+                        <p>Build beautiful native mobile apps for iOS and Android using Flutter and Dart programming language.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.6 (1,234)</span>
+                            <span><i class="fas fa-users"></i> 4,567 students</span>
+                            <span><i class="fas fa-clock"></i> 50 hours</span>
+                        </div>
+                        <div class="course-features">
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                            <span><i class="fas fa-infinity"></i> Lifetime Access</span>
+                            <span><i class="fas fa-google"></i> Google Technology</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="current-price">₹5,499</span>
+                            </div>
+                            <button class="btn btn-primary">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning Courses -->
+                <div class="course-card" data-category="ai-ml">
+                    <div class="course-image">
+                        <div class="course-badge hot">Hot</div>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">AI & Machine Learning</div>
+                        <h3>Artificial Intelligence with Python</h3>
+                        <p>Explore AI concepts, build intelligent systems, and work with neural networks and computer vision.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.8 (2,567)</span>
+                            <span><i class="fas fa-users"></i> 5,890 students</span>
+                            <span><i class="fas fa-clock"></i> 60 hours</span>
+                        </div>
+                        <div class="course-features">
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                            <span><i class="fas fa-infinity"></i> Lifetime Access</span>
+                            <span><i class="fas fa-robot"></i> AI Projects</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="current-price">₹7,999</span>
+                            </div>
+                            <button class="btn btn-primary">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps Courses -->
+                <div class="course-card" data-category="devops">
+                    <div class="course-image">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">DevOps</div>
+                        <h3>Complete DevOps with AWS & Docker</h3>
+                        <p>Master DevOps practices with AWS, Docker, Kubernetes, Jenkins, and CI/CD pipelines.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.7 (1,456)</span>
+                            <span><i class="fas fa-users"></i> 3,210 students</span>
+                            <span><i class="fas fa-clock"></i> 45 hours</span>
+                        </div>
+                        <div class="course-features">
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                            <span><i class="fas fa-infinity"></i> Lifetime Access</span>
+                            <span><i class="fas fa-cloud"></i> Cloud Projects</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="current-price">₹6,499</span>
+                            </div>
+                            <button class="btn btn-primary">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center" style="margin-top: 3rem;">
+                <button class="btn btn-outline" id="load-more">Load More Courses</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with New Courses</h2>
+                <p>Get notified when we launch new courses and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> SkillForge</h3>
+                    <p>Empowering professionals worldwide with cutting-edge skills and knowledge for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="courses.html">Web Development</a></li>
+                        <li><a href="courses.html">Data Science</a></li>
+                        <li><a href="courses.html">Mobile Development</a></li>
+                        <li><a href="courses.html">AI & Machine Learning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="instructors.html">Our Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Career Services</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SkillForge Growth Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - SkillForge Growth Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-graduation-cap"></i> SkillForge</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="instructors.html" class="nav-link">Instructors</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                 <a href="community.html" class="nav-link">Community</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Tech Insights & Learning Resources</h1>
+            <p>Stay updated with the latest trends, tutorials, and career advice</p>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <div class="featured-badge">Featured</div>
+                </div>
+                <div class="featured-text">
+                    <div class="article-meta">
+                        <span class="category">Career Advice</span>
+                        <span class="date">September 10, 2025</span>
+                        <span class="read-time">8 min read</span>
+                    </div>
+                    <h2>The Ultimate Guide to Landing Your First Tech Job in 2025</h2>
+                    <p>Breaking into the tech industry can seem daunting, but with the right strategy and preparation, you can land your dream job. This comprehensive guide covers everything from skill development to interview preparation...</p>
+                    <a href="#" class="btn btn-outline">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-btn active" data-category="all">All Posts</button>
+                <button class="category-btn" data-category="tutorials">Tutorials</button>
+                <button class="category-btn" data-category="career">Career Advice</button>
+                <button class="category-btn" data-category="industry">Industry News</button>
+                <button class="category-btn" data-category="tips">Tips & Tricks</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <article class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <div class="blog-category">Tutorial</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="author">
+                                <i class="fas fa-user"></i>
+                                Sarah Johnson
+                            </span>
+                            <span class="date">
+                                <i class="fas fa-calendar"></i>
+                                Sep 8, 2025
+                            </span>
+                            <span class="read-time">
+                                <i class="fas fa-clock"></i>
+                                5 min read
+                            </span>
+                        </div>
+                        <h3>Building Your First React Application: A Step-by-Step Guide</h3>
+                        <p>Learn how to create a modern React application from scratch. This tutorial covers component creation, state management, and best practices for beginners.</p>
+                        <div class="blog-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Frontend</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-image">
+                        <div class="blog-category">Career</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="author">
+                                <i class="fas fa-user"></i>
+                                Michael Chen
+                            </span>
+                            <span class="date">
+                                <i class="fas fa-calendar"></i>
+                                Sep 6, 2025
+                            </span>
+                            <span class="read-time">
+                                <i class="fas fa-clock"></i>
+                                7 min read
+                            </span>
+                        </div>
+                        <h3>How to Transition from Non-Tech to Data Science Career</h3>
+                        <p>Discover the essential steps to successfully transition into data science from a non-technical background. Learn about required skills, portfolio building, and job search strategies.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Data Science</span>
+                            <span class="tag">Career Change</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card" data-category="industry">
+                    <div class="blog-image">
+                        <div class="blog-category">Industry News</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="author">
+                                <i class="fas fa-user"></i>
+                                Priya Sharma
+                            </span>
+                            <span class="date">
+                                <i class="fas fa-calendar"></i>
+                                Sep 4, 2025
+                            </span>
+                            <span class="read-time">
+                                <i class="fas fa-clock"></i>
+                                6 min read
+                            </span>
+                        </div>
+                        <h3>The Rise of AI in Mobile Development: What Developers Need to Know</h3>
+                        <p>Explore how artificial intelligence is revolutionizing mobile app development. Learn about new tools, frameworks, and opportunities in AI-powered mobile apps.</p>
+                        <div class="blog-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Mobile Development</span>
+                            <span class="tag">Technology Trends</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="blog-card" data-category="tips">
+                    <div class="blog-image">
+                        <div class="blog-category">Tips & Tricks</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="author">
+                                <i class="fas fa-user"></i>
+                                David Rodriguez
+                            </span>
+                            <span class="date">
+                                <i class="fas fa-calendar"></i>
+                                Sep 2, 2025
+                            </span>
+                            <span class="read-time">
+                                <i class="fas fa-clock"></i>
+                                4 min read
+                            </span>
+                        </div>
+                        <h3>10 Essential VS Code Extensions for Web Developers</h3>
+                        <p>Boost your productivity with these must-have Visual Studio Code extensions. From debugging tools to code formatting, these extensions will streamline your workflow.</p>
+                        <div class="blog-tags">
+                            <span class="tag">VS Code</span>
+                            <span class="tag">Productivity</span>
+                            <span class="tag">Web Development</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <div class="blog-category">Tutorial</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="author">
+                                <i class="fas fa-user"></i>
+                                Aisha Patel
+                            </span>
+                            <span class="date">
+                                <i class="fas fa-calendar"></i>
+                                Aug 30, 2025
+                            </span>
+                            <span class="read-time">
+                                <i class="fas fa-clock"></i>
+                                10 min read
+                            </span>
+                        </div>
+                        <h3>Machine Learning 101: Your First Neural Network with Python</h3>
+                        <p>Build your first neural network from scratch using Python and NumPy. This beginner-friendly tutorial explains the fundamentals of neural networks with practical examples.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Neural Networks</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-image">
+                        <div class="blog-category">Career</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="author">
+                                <i class="fas fa-user"></i>
+                                James Wilson
+                            </span>
+                            <span class="date">
+                                <i class="fas fa-calendar"></i>
+                                Aug 28, 2025
+                            </span>
+                            <span class="read-time">
+                                <i class="fas fa-clock"></i>
+                                6 min read
+                            </span>
+                        </div>
+                        <h3>Cybersecurity Skills in High Demand: Where to Start Your Journey</h3>
+                        <p>With cyber threats on the rise, cybersecurity professionals are more in demand than ever. Learn about the key skills employers are looking for and how to get started.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Cybersecurity</span>
+                            <span class="tag">Career Planning</span>
+                            <span class="tag">Skills Development</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center" style="margin-top: 3rem;">
+                <button class="btn btn-outline" id="load-more-articles">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Never Miss an Update</h2>
+                <p>Subscribe to our newsletter for the latest articles, tutorials, and industry insights</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> SkillForge</h3>
+                    <p>Empowering professionals worldwide with cutting-edge skills and knowledge for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="courses.html">Web Development</a></li>
+                        <li><a href="courses.html">Data Science</a></li>
+                        <li><a href="courses.html">Mobile Development</a></li>
+                        <li><a href="courses.html">AI & Machine Learning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="instructors.html">Our Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Career Services</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SkillForge Growth Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

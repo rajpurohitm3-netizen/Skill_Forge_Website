@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - SkillForge Growth Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-graduation-cap"></i> SkillForge</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="instructors.html" class="nav-link">Instructors</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="profile.html" class="nav-link active">Profile</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Header -->
+    <section class="profile-header">
+        <div class="container">
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23667eea'/><text x='50' y='50' text-anchor='middle' dy='0.35em' font-size='40' fill='white'>U</text></svg>" alt="User Avatar">
+                    <div class="avatar-badge">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                </div>
+                <div class="profile-details">
+                    <h1>John Doe</h1>
+                    <p class="profile-title">Full Stack Developer</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-number">Level 12</span>
+                            <span class="stat-label">Current Level</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2,450</span>
+                            <span class="stat-label">XP Points</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">Badges</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="btn btn-primary">Edit Profile</button>
+                    <button class="btn btn-outline">Share Profile</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section class="progress-section">
+        <div class="container">
+            <div class="progress-grid">
+                <div class="progress-card">
+                    <h3>Learning Progress</h3>
+                    <div class="progress-bar-large">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                    <div class="progress-info">
+                        <span>2,450 / 3,000 XP</span>
+                        <span>75% Complete</span>
+                    </div>
+                    <p>Next level: 550 XP to go!</p>
+                </div>
+                <div class="progress-card">
+                    <h3>Current Streak</h3>
+                    <div class="streak-display">
+                        <i class="fas fa-fire"></i>
+                        <span class="streak-number">7</span>
+                        <span class="streak-label">Days</span>
+                    </div>
+                    <p>Keep it up! You're on fire!</p>
+                </div>
+                <div class="progress-card">
+                    <h3>Weekly Goal</h3>
+                    <div class="goal-progress">
+                        <div class="goal-circle">
+                            <div class="goal-fill" style="--progress: 80%"></div>
+                            <span class="goal-percentage">80%</span>
+                        </div>
+                    </div>
+                    <p>4 of 5 courses completed this week</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Badges Section -->
+    <section class="badges-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Achievement Badges</h2>
+                <p>Your collection of earned badges and achievements</p>
+            </div>
+            <div class="badges-grid">
+                <div class="badge-card earned">
+                    <div class="badge-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>First Course</h4>
+                    <p>Completed your first course</p>
+                    <span class="badge-date">Earned 2 days ago</span>
+                </div>
+                <div class="badge-card earned">
+                    <div class="badge-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h4>Streak Master</h4>
+                    <p>7-day learning streak</p>
+                    <span class="badge-date">Earned today</span>
+                </div>
+                <div class="badge-card earned">
+                    <div class="badge-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Code Warrior</h4>
+                    <p>Completed 10 coding challenges</p>
+                    <span class="badge-date">Earned 1 week ago</span>
+                </div>
+                <div class="badge-card earned">
+                    <div class="badge-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Community Helper</h4>
+                    <p>Helped 5 fellow learners</p>
+                    <span class="badge-date">Earned 3 days ago</span>
+                </div>
+                <div class="badge-card earned">
+                    <div class="badge-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>Project Master</h4>
+                    <p>Submitted 3 projects</p>
+                    <span class="badge-date">Earned 1 week ago</span>
+                </div>
+                <div class="badge-card earned">
+                    <div class="badge-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Top Performer</h4>
+                    <p>Scored 90%+ in 5 quizzes</p>
+                    <span class="badge-date">Earned 2 days ago</span>
+                </div>
+                <div class="badge-card locked">
+                    <div class="badge-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h4>Expert Level</h4>
+                    <p>Complete 20 courses</p>
+                    <span class="badge-progress">12/20 courses</span>
+                </div>
+                <div class="badge-card locked">
+                    <div class="badge-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h4>Mentor</h4>
+                    <p>Help 25 fellow learners</p>
+                    <span class="badge-progress">5/25 helped</span>
+                </div>
+                <div class="badge-card locked">
+                    <div class="badge-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h4>Legend</h4>
+                    <p>Reach level 20</p>
+                    <span class="badge-progress">Level 12/20</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Path -->
+    <section class="learning-path">
+        <div class="container">
+            <div class="section-header">
+                <h2>Learning Path</h2>
+                <p>Your personalized learning journey</p>
+            </div>
+            <div class="path-container">
+                <div class="path-item completed">
+                    <div class="path-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="path-content">
+                        <h4>HTML & CSS Fundamentals</h4>
+                        <p>Master the basics of web development</p>
+                        <span class="path-date">Completed 1 week ago</span>
+                    </div>
+                    <div class="path-score">95%</div>
+                </div>
+                <div class="path-item completed">
+                    <div class="path-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="path-content">
+                        <h4>JavaScript Essentials</h4>
+                        <p>Learn modern JavaScript programming</p>
+                        <span class="path-date">Completed 5 days ago</span>
+                    </div>
+                    <div class="path-score">88%</div>
+                </div>
+                <div class="path-item current">
+                    <div class="path-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="path-content">
+                        <h4>React Development</h4>
+                        <p>Build dynamic user interfaces</p>
+                        <span class="path-progress">65% Complete</span>
+                    </div>
+                    <div class="path-score">65%</div>
+                </div>
+                <div class="path-item upcoming">
+                    <div class="path-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="path-content">
+                        <h4>Node.js Backend</h4>
+                        <p>Server-side JavaScript development</p>
+                        <span class="path-status">Upcoming</span>
+                    </div>
+                    <div class="path-score">-</div>
+                </div>
+                <div class="path-item upcoming">
+                    <div class="path-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="path-content">
+                        <h4>Full Stack Project</h4>
+                        <p>Build a complete web application</p>
+                        <span class="path-status">Upcoming</span>
+                    </div>
+                    <div class="path-score">-</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Feed -->
+    <section class="activity-feed">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recent Activity</h2>
+                <p>Your learning journey timeline</p>
+            </div>
+            <div class="activity-timeline">
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h4>Earned "Streak Master" Badge</h4>
+                        <p>Completed 7-day learning streak</p>
+                        <span class="activity-time">2 hours ago</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h4>Completed "React Hooks" Lesson</h4>
+                        <p>Scored 92% on the quiz</p>
+                        <span class="activity-time">4 hours ago</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h4>Helped a fellow learner</h4>
+                        <p>Answered a question about JavaScript closures</p>
+                        <span class="activity-time">1 day ago</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h4>Submitted "Todo App" Project</h4>
+                        <p>Built a React-based todo application</p>
+                        <span class="activity-time">2 days ago</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="activity-content">
+                        <h4>Earned "Top Performer" Badge</h4>
+                        <p>Scored 90%+ in 5 consecutive quizzes</p>
+                        <span class="activity-time">3 days ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="goals-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Learning Goals</h2>
+                <p>Set and track your learning objectives</p>
+            </div>
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <div class="goal-header">
+                        <h4>Complete React Course</h4>
+                        <span class="goal-status active">Active</span>
+                    </div>
+                    <div class="goal-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                        <span>65% Complete</span>
+                    </div>
+                    <div class="goal-deadline">
+                        <i class="fas fa-calendar"></i>
+                        <span>Due: March 15, 2025</span>
+                    </div>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-header">
+                        <h4>Build 5 Projects</h4>
+                        <span class="goal-status active">Active</span>
+                    </div>
+                    <div class="goal-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                        <span>3 of 5 projects</span>
+                    </div>
+                    <div class="goal-deadline">
+                        <i class="fas fa-calendar"></i>
+                        <span>Due: April 1, 2025</span>
+                    </div>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-header">
+                        <h4>Maintain 30-day Streak</h4>
+                        <span class="goal-status active">Active</span>
+                    </div>
+                    <div class="goal-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 23%"></div>
+                        </div>
+                        <span>7 of 30 days</span>
+                    </div>
+                    <div class="goal-deadline">
+                        <i class="fas fa-calendar"></i>
+                        <span>Due: February 28, 2025</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary">Set New Goal</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> SkillForge</h3>
+                    <p>Empowering professionals worldwide with cutting-edge skills and knowledge for the digital age.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Profile</h4>
+                    <ul>
+                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#">Learning Path</a></li>
+                        <li><a href="#">Goals</a></li>
+                        <li><a href="#">Activity</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SkillForge Growth Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
