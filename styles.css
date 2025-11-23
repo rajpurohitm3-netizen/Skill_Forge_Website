@@ -1153,7 +1153,7 @@ h4 {
 
 p {
     margin: 0 0 var(--space-16) 0;
-    color: white;
+    color: rgb(105, 87, 87);
 }
 
 /* Buttons */
